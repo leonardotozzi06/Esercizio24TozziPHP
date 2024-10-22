@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invio Mail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .azzurro {
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .arancione {
+            background-color: orange;
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .grigio {
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Invio Mail</h1>
+    <form action="invio.php" method="POST">
+        <label for="mittente">Indirizzo mail del mittente:</label><br>
+        <input type="email" id="mittente" name="mittente" required><br><br>
+
+        <label for="destinatario">Indirizzo mail del destinatario:</label><br>
+        <input type="email" id="destinatario" name="destinatario" required><br><br>
+
+        <label for="oggetto">Oggetto:</label><br>
+        <input type="text" id="oggetto" name="oggetto" required><br><br>
+
+        <label for="corpo">Corpo della mail:</label><br>
+        <textarea id="corpo" name="corpo" rows="10" required></textarea><br><br>
+
+        <button type="submit">Invia</button>
+    </form>
+
+</body>
+</html>
